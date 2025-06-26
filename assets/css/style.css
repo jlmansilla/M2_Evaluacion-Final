@@ -1,0 +1,164 @@
+* {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(235, 215, 174);
+    border: 7px solid rgb(190, 90, 28);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+header > nav, footer {
+    font-size: 2vw;
+    background-color: burlywood;
+}
+nav a {
+    padding: 0;
+    text-decoration: none;
+}
+nav a:visited{
+    color: black;
+}
+nav a.active{
+    text-decoration: underline;
+    color: #ffffff;
+}
+.banner-container {
+    max-height: 350px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('assets/img/banner.png');
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+    background-position: center;
+}
+header > h1, header > h2 {
+    font-size: 10vw !important;
+}
+
+h2 {
+    color:maroon;
+}
+main {
+    background: rgb(235, 215, 174);
+    height: 90%;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    resize: both;
+    gap: 30px;
+  }
+#Contactos {
+    border-radius:50%;
+    overflow: hidden;
+    height: auto;
+    display: block;
+    margin: 10px auto; 
+    box-shadow: 0 4px 8px rgba(52, 21, 1, 0.272)
+
+}
+footer {
+    background-color: burlywood;
+    position: relative; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;    
+  }
+#formulario {
+    font-size: 20px;
+}
+form > div {
+    padding: 6px
+}
+
+#Enviar {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 7px 12px;
+    background-color: burlywood;
+    color:rgb(112, 54, 3);
+    border-width: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#Enviar{
+    color: white;
+    padding: 8px;
+}
+#Enviar:hover{
+    color: #841616;
+    background-color: rgb(242, 241, 198);
+    border-width: 1px;
+    border-color: rgb(112, 54, 3);
+}
+#contenedor {
+    display: flex;
+    width: 100%;
+    background-color: burlywood;    
+    justify-content:end;
+    height: 28px;
+}
+
+.thumbnail {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    border: 3px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, border-color 0.3s;
+    box-shadow: 0 0 10px rgb(255, 255, 255)
+}
+
+.thumbnail:hover {
+    transform: scale(1.02);
+    border-color: rgb(56, 56, 56);
+}
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn:hover {
+    background-color: #237427;
+    color:white
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(112, 54, 3, 0.1);
+    transition: all 0.3s ease;
+}
+.mi-cuadro {
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border: 1px dotted burlywood;
+}       
+.carro:hover, .carro.active {
+    background-image: radial-gradient(circle, rgb(255, 250, 194), rgba(255, 255, 255, 0) 75%);
+    border-radius: 100px;
+}
