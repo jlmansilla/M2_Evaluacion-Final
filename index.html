@@ -13,22 +13,29 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <style>
     .flea-jumping {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    background: url('assets/img/pulga.png') no-repeat;
-    background-size: contain;
-    bottom: 20px;
-    left: 10%;
-    animation: jump 2s infinite alternate ease-in-out;
-}
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background: url('assets/img/pulga.png') no-repeat;
+      background-size: contain;
+      bottom: 20px;
+      left: 10%;
+      animation: jump 2s infinite alternate ease-in-out;
+    }
 
-@keyframes jump {
-    0% { transform: translateY(0) rotate(-30deg); }
-    50% { transform: translateY(-100px) rotate(30deg); }
-    100% { transform: translateY(20) rotate(-45deg); }
-}
+    @keyframes jump {
+      0% {
+        transform: translateY(0) rotate(-30deg);
+      }
 
+      50% {
+        transform: translateY(-100px) rotate(30deg);
+      }
+
+      100% {
+        transform: translateY(20) rotate(-45deg);
+      }
+    }
   </style>
 
 </head>
@@ -66,10 +73,11 @@
     </nav>
     <div class="container-fluid px-0">
       <div class="banner-container">
-          <img src="assets/img/banner.png" class="card-img" alt="Banner Pulga Store">
+        <img src="assets/img/banner.png" class="card-img" alt="Banner Pulga Store">
         <div class="card-img-overlay d-flex flex-column justify-content-end ">
-          <h1 class="display-1 fw-bold text-center" 
-          style="color:rgb(85, 42, 22); text-shadow: 1px 2px 5px rgba(47, 181, 193, 0.55); background-color: rgba(255, 235, 205, 0.579);">Pulga Store</h1>
+          <h1 class="display-1 fw-bold text-center"
+            style="color:rgb(85, 42, 22); text-shadow: 1px 2px 5px rgba(47, 181, 193, 0.55); background-color: rgba(255, 235, 205, 0.579);">
+            Pulga Store</h1>
         </div>
       </div>
     </div>
@@ -80,16 +88,37 @@
     </div>
     <div>
       <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button bg-warning" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Quienes somos
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <div class="card mb-3">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button bg-warning" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Quienes somos
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="container w-50 mt-5">
+                <div class="row">
+                  <div class="col-3 mx-2">
+                    <img src="./assets/img/pulga.png" class="img-fluid" alt="">
+                  </div>
+
+                  <div class="col-8 mx-3">
+                    <div class="row">
+                      <h2 class="my-2">Quienes somos</h2>
+                    </div>
+                    <div class="row">
+                      <p>Somos un grupo de jóvenes emprendedores que con mucho entusiasmo ofrecemos a nuestros
+                        usuarios
+                        accesorios de electrónica. Físicamente nos encontramos en Picarte 567, Valdivia, Región de
+                        los Ríos.
+                        Confía en nosotros y comunícate ahora
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="card mb-3">
                   <div class="row g-0">
                     <div class="col-2">
                       <a href="./assets/img/pulga.png" data-fancybox="gallery">
@@ -109,21 +138,57 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> -->
 
-              </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button bg-warning" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
-                Dónde nos encontramos
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <div class="card mb-3">
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Dónde nos encontramos
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="container w-50 mt-5">
+                <div class="row">
+                  <div class="col-3 mx-2">
+                    <img src="./assets/img/store.png" class="img-fluid" alt="">
+                  </div>
+
+                  <div class="col-8 mx-3">
+                    <div class="row">
+                      <h2 class="">Sucursal</h2>
+                    </div>
+                    <div class="row">
+                      <p class="">
+                        Nos encontramos en:
+                      </p>
+                      <ul class="ps-5">
+                        <li>Picarte 567, Valdivia, Región de los Ríos.</li>
+                        <li>Teléfono 123 456 789</li>
+                      </ul>
+                      <p>
+                        Confía en nosotros y comunícate ahora
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 text-center">
+                      <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3064.6472312937944!2d-73.24430162423933!3d-39.8149041510363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9615ee7777bde51b%3A0xebd5b43e89443fd5!2sAv.%20Ram%C3%B3n%20Picarte%20567%2C%20Valdivia%2C%20Los%20R%C3%ADos!5e0!3m2!1ses!2scl!4v1750301896170!5m2!1ses!2scl"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-fancybox
+                        data-type="iframe" data-width="640" data-height="480">
+                        <button class="btn btn-success">Ver mapa</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="card mb-3">
                   <div class="row g-0">
                     <div class="col-2">
                       <a href="./assets/img/store.png" data-fancybox="gallery">
@@ -148,12 +213,12 @@
                       </div>
                     </div>
                   </div>
-                </div>
-                </div>
+                </div> -->
             </div>
-  </div>
-</div>
-    
+          </div>
+        </div>
+      </div>
+
 
   </main>
   </div>
